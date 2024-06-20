@@ -7,10 +7,12 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.util.List;
 
+
 public class MyBot extends TelegramLongPollingBot {
 
-    private final String token = "7351865879:AAGQxLZB9WuRSgHiILRxlQYXsznh6pFDRDI";
-    private final String username = "flqzds";
+    private  String token="7351865879:AAGQxLZB9WuRSgHiILRxlQYXsznh6pFDRDI";
+
+    private  String username="flqzds";
 
     @Override
     public void onUpdateReceived(Update update) {
