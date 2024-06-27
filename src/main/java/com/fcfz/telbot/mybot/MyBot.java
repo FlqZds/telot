@@ -2,6 +2,7 @@ package com.fcfz.telbot.mybot;
 
 import com.fcfz.telbot.common.util;
 import com.fcfz.telbot.dto.buttomDTO;
+import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -17,6 +18,14 @@ public class MyBot extends TelegramLongPollingBot {
 
     private String username = "flqzds";
 
+
+    public MyBot() {
+        super();
+    }
+
+    public MyBot(DefaultBotOptions options) {
+        super(options);
+    }
 
     private SendMessage hasMessage(Update update) {
         SendMessage message = new SendMessage();
